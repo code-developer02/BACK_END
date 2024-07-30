@@ -80,7 +80,7 @@ app.get("/profile",function(req, res, next){
 
 app.use((err, req, res, next) => {
     console.error(err.stack)
-    res.status(500).send("Something went wrong, We don't have any idea...");  // It is written in frontend.
+    res.status(500).send("Something went wrong, We don't have any idea..");  // It is written in frontend.
 });
 
 app.listen(3000);
